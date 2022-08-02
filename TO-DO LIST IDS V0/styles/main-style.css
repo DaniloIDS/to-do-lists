@@ -1,18 +1,18 @@
-body{
+body {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.7rem;
   height: 100vh;
   position: relative;
 }
 
-header{
+header {
   text-align: center;
   padding: 20px;
   background-color: rgb(47, 0, 118);
   color: white;
 }
 
-footer{
+footer {
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -23,25 +23,25 @@ footer{
   font-size: 0.9rem;
 }
 
-.mainFrame{
+.mainFrame {
   margin-left: auto;
   margin-right: auto;
-  max-width: 60%;
+  max-width: 80%;
   text-align: center;
   padding-top: 30px;
   min-height: max-content;
 }
 
-.inputFrame{
+.inputFrame {
   padding: 30px;
   margin-bottom: 1rem;
 }
 
-.callTask{
+.callTask {
   padding-bottom: 10px;
 }
 
-#inputTask{
+#inputTask {
   font-size: 1.5rem;
   border-radius: 10px;
   border: 1px solid black;
@@ -49,7 +49,7 @@ footer{
   min-width: 90%;
 }
 
-#sendTask{
+#sendTask {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -59,19 +59,29 @@ footer{
   color: white;
 }
 
-li{
+li {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.task{
-max-width: 90%;
-background-color: gray;
+.task {
+  max-width: 90%;
+  overflow-x: visible;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
 
-li::before{
-  content: 'x';
+::-webkit-scrollbar{
+  background-color: white;
+  height: 1px;
+}
+
+li::before {
+  content: '';
   min-width: 30px;
   height: 30px;
   margin-right: 10px;
@@ -79,13 +89,11 @@ li::before{
   cursor: pointer;
 }
 
-li::after{
-  content: 'y';
+li::after {
+  content: '';
   margin-left: 20px;
-  width: 30px;
+  min-width: 30px;
   height: 30px;
   background-color: green;
   cursor: pointer;
 }
-
-

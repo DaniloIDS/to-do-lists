@@ -1,0 +1,91 @@
+body{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.7rem;
+  height: 100vh;
+  position: relative;
+}
+
+header{
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(47, 0, 118);
+  color: white;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: blue;
+  min-width: 100%;
+  color: white;
+  padding: 5px 0;
+  font-size: 0.9rem;
+}
+
+.mainFrame{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+  text-align: center;
+  padding-top: 30px;
+  min-height: max-content;
+}
+
+.inputFrame{
+  padding: 30px;
+  margin-bottom: 1rem;
+}
+
+.callTask{
+  padding-bottom: 10px;
+}
+
+#inputTask{
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  min-width: 90%;
+}
+
+#sendTask{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+li{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.task{
+max-width: 90%;
+background-color: gray;
+}
+
+li::before{
+  content: 'x';
+  min-width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: red;
+  cursor: pointer;
+}
+
+li::after{
+  content: 'y';
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  cursor: pointer;
+}
+
+

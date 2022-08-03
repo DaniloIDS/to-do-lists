@@ -26,6 +26,8 @@ function sendingTask(){
 
   list.appendChild(item)
 
+  callRemoveTasks()
+
   task.value = ""
   task.focus()
 }

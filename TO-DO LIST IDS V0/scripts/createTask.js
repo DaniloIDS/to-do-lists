@@ -21,7 +21,7 @@ function sendingTask(){
   editButton.setAttribute('class', 'editButton')
   checkButton.setAttribute('class', 'checkButton')
 
-  contentItem.placeholder = task.value
+  contentItem.value = task.value
   contentItem.disabled = true
 
   div.append(editButton, checkButton)
@@ -30,6 +30,7 @@ function sendingTask(){
   list.appendChild(item)
 
   callRemoveTasks()
+  callEditTask()
 
   task.value = ""
   task.focus()

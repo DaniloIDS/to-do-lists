@@ -68,11 +68,17 @@ footer {
   border-radius: 10px;
 }
 
-.taskValue {
+.taskValue, .taskValue:disabled, .taskValue::placeholder {
+  text-align: center;
+  width: 90%;
   max-width: 90%;
-  overflow-x: visible;
-  overflow-y: hidden;
   white-space: nowrap;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  border: none;
+  color: black ;
+  background-color: white;
 }
 
 .removeButton, .editButton, .checkButton {

@@ -8,10 +8,12 @@ function sendingTask(){
   
   const item = document.createElement('li')
   const removeButton = document.createElement('button')
-  const contentItem = document.createElement('p')
+  const contentItem = document.createElement('input')
   const div = document.createElement('div')
   const editButton = document.createElement('button')
   const checkButton = document.createElement('button')
+
+  contentItem.type = 'text';
 
   item.setAttribute('class', 'taskContainer')
   contentItem.setAttribute('class', 'taskValue')
@@ -19,7 +21,8 @@ function sendingTask(){
   editButton.setAttribute('class', 'editButton')
   checkButton.setAttribute('class', 'checkButton')
 
-  contentItem.innerText = task.value
+  contentItem.placeholder = task.value
+  contentItem.disabled = true
 
   div.append(editButton, checkButton)
   item.append(removeButton, contentItem, div)

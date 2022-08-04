@@ -31,6 +31,7 @@ function sendingTask(){
 
   callRemoveTasks()
   callEditTask()
+  callCheckTask()
 
   task.value = ""
   task.focus()
